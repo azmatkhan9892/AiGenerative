@@ -1,0 +1,113 @@
+.navbar {
+    background-color: #1A1A2E; // Deep navy background
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+  
+      img {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px; // Spacing between logo and text
+      }
+  
+      span {
+        font-size: 1.25rem;
+        color: #fff;
+      }
+    }
+  
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+            font-size: 15px;
+            background: transparent;
+            color: #ffffff8c;
+            font-weight: 400;
+            white-space: nowrap;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 19px !important;
+          &:hover {
+            color: #62B4FF; // Light blue on hover
+          }
+  
+          &.dropdown-toggle {
+            position: relative;
+          }
+        }
+  
+        .dropdown-menu {
+          background-color: #1A1A2E; // Same as navbar background
+          border: none;
+  
+          .dropdown-item {
+            color: white;
+  
+            &:hover {
+              background-color: #2C2C44; // Darker background on hover
+            }
+          }
+  
+          .dropdown-divider {
+            border-top: 1px solid #444; // Divider color
+          }
+        }
+      }
+  
+      // Webinar Link with Free Badge
+      .nav-item:last-child {
+        position: relative;
+  
+        .badge {
+          background-color: #FF5252; // Red badge background
+          color: white;
+          font-size: 0.75rem;
+          padding: 3px 6px;
+          border-radius: 15px;
+          margin-left: 5px;
+        }
+  
+        .nav-link {
+          display: flex;
+          align-items: center;
+          color: #ffffff8c;
+  
+          &:hover {
+            color: #62B4FF;
+          }
+        }
+      }
+    }
+  
+    // Search Form
+    form.d-flex {
+      .form-control {
+        background-color: #fff; // Dark input background
+        color: white;
+        border: 1px solid #444;
+        padding: 4px 8px;
+        border-radius: 5px;
+  
+        &::placeholder {
+          color: #888; // Lighter gray placeholder text
+        }
+  
+        &:focus {
+          background-color: #2C2C50; // Slightly lighter when focused
+          outline: none;
+          border-color: #62B4FF; // Border color on focus
+        }
+      }
+  
+      .btn-outline-light {
+        color: white;
+        border-color: #62B4FF; // Light blue border for the button
+  
+        &:hover {
+          background-color: #62B4FF; // Hover background
+          color: white;
+        }
+      }
+    }
+  }
+  

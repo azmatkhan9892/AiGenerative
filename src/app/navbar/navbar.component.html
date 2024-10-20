@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container">
+        <!-- Logo and Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./logo.svg" alt="Generative Tools Logo" width="40">
+            <span>Generative Tools</span>
+        </a>
+
+
+        <!-- Toggle Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/products']">Products</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">Text To Image</a></li>
+                        <li><a class="dropdown-item">Travel</a></li>
+                        <li><a class="dropdown-item">Speech To Text</a></li>
+                        <li><a class="dropdown-item">Seo</a></li>
+                        <li><a class="dropdown-item">Ai Architecture Design</a></li>
+                        <li><a class="dropdown-item">Product Photography</a></li>
+                        <li><a class="dropdown-item">Video Editing</a></li>
+                        <li><a class="dropdown-item">Generative Code</a></li>
+                        <li><a class="dropdown-item">Text To Speech</a></li>
+                        <li><a class="dropdown-item">Text To Video</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" hr>All Categories</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/about']">About</a></li>
+                <li class="nav-item"><a class="nav-link">List your tool</a></li>
+                <li class="nav-item"><a class="nav-link">Blog</a></li>
+                <li class="nav-item position-relative"><span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">Free</span><a
+                        class="nav-link">Join Webinar</a></li>
+            </ul>
+            <form class="d-flex" role="search"><input readonly="" class="form-control form-control-sm me-2"
+                    placeholder="Describe your task" aria-label="Search" type="search"></form>
+        </div>
+    </div>
+</nav>

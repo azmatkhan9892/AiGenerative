@@ -1,0 +1,57 @@
+$primary-bg: #1f2937;  // Gray-900
+$text-color: #ffffff;  // White
+$text-secondary-color: #9ca3af;  // Gray-400
+
+
+.about-sub-hd {
+    color: hsla(0, 0%, 100%, .4);
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    line-height: 1.67;
+    text-align: center;
+    text-transform: uppercase;
+}
+.about-hd {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 100;
+    line-height: 1.25;
+    margin: 40px auto;
+    text-align: center;
+}
+.about-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.78;
+    margin: 0 10px;
+    opacity: .6;
+}
+.grey-scale {
+    filter: brightness(0) invert(1);
+    opacity: .3;
+}
+header {
+  padding: 1.5rem;
+  background-color: $primary-bg;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  p {
+    color: $text-secondary-color;
+    margin-top: 1rem;
+    font-size: 1.125rem;
+  }
+
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    stroke: $text-color;
+  }
+}
