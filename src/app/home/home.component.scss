@@ -61,6 +61,12 @@
     }
   }
   
+  .Smobile{
+    display: none;
+  }
+  .Sweb{
+    display: block;
+  }
   .ai-tools {
     padding: 4rem 2rem;
   
@@ -788,4 +794,87 @@ button.arowa {
 .carousel-item{
   display: block !important;
   position: initial;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-h1 {
+      font-size: 38px !important;
+      font-weight: 700 !important;
+  }
+  .header-text {
+      font-size: 20px !important;
+  }
+  .core-feature {
+    flex-wrap: wrap;
+    gap: 30px !important;
+  }
+  .core-feature .feature-box.text-end {
+    margin-top: 0;
+    text-align: center !important;
+  }
+  .core-feature .feature-box img {
+    display: none;
+  }
+  .core-feature .laptop-img {
+    margin: 0 auto;
+  }
+  .core-feature .feature-box {
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
+  .brwsr {
+    height: 500px;
+    background: url(/_next/static/media/bg.83b24bda.png), linear-gradient(#0d2480, #412f7e);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    text-align: center;
+  }
+  .kyte, .kyte2 {
+    width: 50px;
+    height: 50px;
+    z-index: 9;
+  }
+  .kyte {
+    left: 22px;
+    top: 303px;
+  }
+  .kyte2 {
+    left: unset;
+    right: 17px;
+    top: 375px;
+  }
+  .kyte img, .kyte2 img {
+    width: 20px;
+    margin-top: 13px;
+  }
+  .brwsr .smallbrwsr {
+    right: 0;
+    bottom: -72px;
+    width: 100%;
+    font-size: 14px;
+    padding: 15px 13px;
+  }
+  .mob {
+    width: 324px;
+  }
+  .Sweb{
+    display: none !important;
+  }
+  .Smobile{
+    display: block !important;
+  }
+  .slider-image .card, .swiper-container .swiper-slide {
+    width: 330px;
+    height: 280px;
+  }
+  .slider-image{
+    display: flex;
+    justify-content: center;
+  }
+  .swiper-slide-active {
+    transform: unset !important;
+  }
 }
