@@ -1,0 +1,257 @@
+.listing-log {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.product-img-cntr {
+  position: relative;
+  height: 76px;
+  width: 76px;
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.prodIMG {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0px;
+  object-fit: contain;
+  color: transparent;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+.listing-details-dark .va,
+.listing-log-dark h1 {
+  color: #fff;
+}
+.listing-log h1 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+.product-review span {
+  width: 10px;
+  height: 10px;
+  color: #00ffd2;
+  margin-right: 4px;
+}
+.listing-log .cardtag {
+  margin-left: 20px;
+}
+.listing-log .cardtag span:last-child {
+  border: none;
+}
+.listing-log .cardtag span:first-child {
+  padding-left: 0;
+}
+.listing-log-dark .cardtag span {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 8px;
+  margin-top: 3px;
+  font-weight: 400;
+  padding-left: 3px;
+}
+.hide-web {
+  display: none;
+}
+.btn-primary {
+  background-image: linear-gradient(281deg, #420be6, #a16bb3);
+  background-size: 101%;
+  border: none;
+}
+.details-menu {
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  margin-top: 20px;
+  .nav-tabs {
+    border: none;
+    .active {
+      color: #fff !important;
+      background: none;
+      border: none;
+      border-bottom: 4px solid #fff !important;
+    }
+  }
+}
+.full-left1-dark {
+  .do-use {
+    background: linear-gradient(90deg, #9c66b6, #eee);
+    margin-top: 40px;
+    border-radius: 4px;
+    padding: 10px;
+    h5 {
+      font-size: 16px;
+      font-weight: 500;
+      padding-top: 6px;
+      padding-left: 5px;
+    }
+  }
+  .full-content {
+    margin-top: 32px;
+  }
+  h4 {
+    color: #fff;
+  }
+  .font-16 {
+    font-size: 16px !important;
+  }
+}
+
+.full-left1-dark p {
+  color: #ccc;
+}
+
+.full-content p {
+  font-size: 16px;
+}
+
+._30i9K {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.full-left-side {
+  padding-left: 0;
+  margin-top: 40px;
+}
+.full-left1-dark .recent-lounch-heading {
+  color: #fff;
+}
+
+.font-24 {
+  font-size: 24px !important;
+}
+.recent-lounch {
+  display: flex;
+}
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px #dee2e6 solid;
+  opacity: 0.25;
+}
+.links {
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+  margin-top: 20px;
+  border-radius: 4px;
+  padding: 24px 20px;
+  aside,
+  .links aside p {
+    margin-bottom: 10px;
+  }
+}
+.ad-box1-dark p b,
+.links-dark aside p {
+  color: #fff;
+}
+.urlIcon {
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+.links-dark h4 {
+  color: #ccc;
+  word-break: break-all;
+}
+
+.links h4 {
+  font-size: 14px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  padding-bottom: 12px;
+  display: flex;
+}
+.othertoolicon {
+  width: 50px;
+  height: 50px;
+  background: #9c67b6;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 3px;
+}
+a {
+  text-decoration: none;
+}
+.svg-inline--fa {
+  display: inline-block;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  box-sizing: content-box;
+}
+._30i9K img {
+  width: 168px;
+  height: 95px;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+}
+@media screen and (max-width: 600px) {
+  .hide-web {
+    display: block;
+  }
+  .do-use,
+  .listing-log {
+    flex-direction: column;
+  }
+  .social {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    border-radius: 30px;
+    margin: 0 10px;
+  }
+}
+a {
+  color: #fff;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.f-12 {
+  font-size: 12px;
+}
+
+.alternative-dark .list1 p {
+  color: #eee;
+}
+.alternative .list1 p {
+  margin: 0;
+  line-height: 18px;
+}
+.alternative-dark .list1 p span {
+  color: #ccc;
+}
+
+.font-12 {
+  font-size: 12px !important;
+}
+.alternative aside {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.list1 aside {
+  color: #fff;
+  border-radius: 4px;
+}

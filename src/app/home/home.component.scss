@@ -773,6 +773,9 @@ button.arowa {
 .catLogoCntr {
   width: 60px;
   height: 60px;
+  position: absolute;
+  left: 44%;
+  top: -50px;
   border-radius: 100px;
   display: flex;
   justify-content: center;
@@ -791,10 +794,10 @@ button.arowa {
   font-weight: 100;
 }
 
-.carousel-item{
-  display: block !important;
-  position: initial;
-}
+// .carousel-item{
+//   display: block !important;
+//   position: initial;
+// }
 
 @media only screen and (max-width: 768px) {
   .header-h1 {

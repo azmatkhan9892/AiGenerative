@@ -111,3 +111,8 @@
     }
   }
   
+  @media screen and (max-width:992px) {
+    .navbar .navbar-nav .nav-item:last-child .badge{
+      margin-left: -22px !important;
+    }
+  }

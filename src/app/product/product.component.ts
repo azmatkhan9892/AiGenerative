@@ -139,6 +139,7 @@
 
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import {
   HttpClient,
   HttpClientModule,
@@ -148,7 +149,7 @@ import {
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule, HttpClientModule, RouterModule],
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss'],
 })
@@ -174,17 +175,24 @@ export class ProductComponent {
     const categoryString = this.selectedCategories.join(','); // Join selected categories with a comma
     const toolPropString = this.selectedToolProperties.join(','); // Join selected tool properties with a comma
     this.loading = true;
-    const fullUrl = `${apiUrl}?category=${categoryString}&toolprop=${toolPropString}&offset=${this.offset}&total=${this.total}&fetchField=permalink,ImageLogo,ToolName,ToolShortInfo,Rating,CategoryIds,ToolLink,ToolProperty,logoDarkMode&alternetProduct=&orderBy=`;
+    // const fullUrl = `${apiUrl}?category=${categoryString}&toolprop=${toolPropString}&offset=${this.offset}&total=${this.total}&fetchField=permalink,ImageLogo,ToolName,ToolShortInfo,Rating,CategoryIds,ToolLink,ToolProperty,logoDarkMode&alternetProduct=&orderBy=`;
+    const fullUrl = 'https://51d2-103-152-101-63.ngrok-free.app/api/products';
 
+    // const headers = new HttpHeaders({
+    //   Authorization:
+    //     'Basic dXNlcjk4NzU0NTo2ZzVmZDY0ZzU0ZzVmNGY1NXNhNWZldDV0NHV1b2k1dW80',
+    // });
     const headers = new HttpHeaders({
-      Authorization:
-        'Basic dXNlcjk4NzU0NTo2ZzVmZDY0ZzU0ZzVmNGY1NXNhNWZldDV0NHV1b2k1dW80',
+      'ngrok-skip-browser-warning': 'any-value',
     });
-
     this.http.get(fullUrl, { headers }).subscribe(
       (response: any) => {
-        console.log('API Response:', response);
+        console.log(response);
+        // const parsedResponse = JSON.parse(response); // Manually parse the response
+        // console.log('Parsed API Response:', parsedResponse);
         this.products.push(...response.data); // Push new products to existing array
+        debugger;
+        console.log(this.products);
         this.offset += 8; // Increase offset by 15 after loading new products
         this.loading = false;
       },
@@ -196,18 +204,18 @@ export class ProductComponent {
   }
 
   // HostListener to detect scroll events
-  @HostListener('window:scroll', [])
-  onScroll() {
-    const productList = document.getElementById('prdt-list');
+  // @HostListener('window:scroll', [])
+  // onScroll() {
+  //   const productList = document.getElementById('prdt-list');
 
-    if (productList) {
-      const rect = productList.getBoundingClientRect();
-      // Check if we've scrolled to the bottom of the div
-      if (rect.bottom <= window.innerHeight) {
-        this.loadProducts(); // Call the loadProducts method to fetch more data
-      }
-    }
-  }
+  //   if (productList) {
+  //     const rect = productList.getBoundingClientRect();
+  //     // Check if we've scrolled to the bottom of the div
+  //     if (rect.bottom <= window.innerHeight) {
+  //       this.loadProducts(); // Call the loadProducts method to fetch more data
+  //     }
+  //   }
+  // }
 
   onCategoryChange(event: Event) {
     const target = event.target as HTMLInputElement;
