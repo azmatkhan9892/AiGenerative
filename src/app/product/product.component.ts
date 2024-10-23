@@ -176,7 +176,7 @@ export class ProductComponent {
     const toolPropString = this.selectedToolProperties.join(','); // Join selected tool properties with a comma
     this.loading = true;
     // const fullUrl = `${apiUrl}?category=${categoryString}&toolprop=${toolPropString}&offset=${this.offset}&total=${this.total}&fetchField=permalink,ImageLogo,ToolName,ToolShortInfo,Rating,CategoryIds,ToolLink,ToolProperty,logoDarkMode&alternetProduct=&orderBy=`;
-    const fullUrl = 'https://b189-103-152-101-63.ngrok-free.app/api/products';
+    const fullUrl = 'https://2ff9-223-123-17-60.ngrok-free.app/api/products';
 
     // const headers = new HttpHeaders({
     //   Authorization:
